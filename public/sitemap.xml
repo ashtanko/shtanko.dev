@@ -3,15 +3,68 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>/tags/algorithms/</loc>
+    <lastmod>2020-06-06T09:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2020-06-06T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020-06-06-changes-in-java-string/</loc>
+    <lastmod>2020-06-06T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-06-06T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/notes/</loc>
+    <lastmod>2020-06-06T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-06-06T09:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
+    <lastmod>2020-06-06T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020-05-01-algorithms-graphs/</loc>
+    <lastmod>2020-05-01T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/programming-language/</loc>
+    <lastmod>2020-04-29T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020-04-29-subtyping/</loc>
+    <lastmod>2020-04-29T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/racket/</loc>
+    <lastmod>2020-02-29T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020-02-29-racket/</loc>
+    <lastmod>2020-02-29T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/about/</loc>
+    <lastmod>2016-08-24T17:51:42+00:00</lastmod>
   </url>
   
 </urlset>

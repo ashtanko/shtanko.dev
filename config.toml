@@ -1,266 +1,73 @@
 baseurl = "/"
-title = "Alexey Shtanko"
-languageCode = "en"
-theme = "hugo-devresume-theme"
+languageCode = "en-us"
+title = "Hi, I’m Alex"
+theme = "cactus"
+copyright = "Alexey Shtanko" # cactus will use title if copyright is not set
+disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
+# googleAnalytics = "UA-1234-5"
+
+# summaryLength = 2
+
+# Main menu which appears below site header.
+[[menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+
+ [[menu.main]]
+ name = "Writings"
+ url = "/posts"
+ weight = 2
+
+ [[menu.main]]
+ name = "Tags"
+ url = "/tags"
+ weight = 3
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 4
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
 
 [params]
-    author = "CowboySmall"
-    description = "DevResume - Bootstrap 4 Resume/CV Template For Software Developers"
 
-
-    primaryColor = "#54B689"
-    textPrimaryColor = "#292929"
-
-    [params.profile]
-        enable = true
-        name = "Alexey Shtanko"
-        tagline = "Senior Software Engineer"
-        avatar = "profile.jpg"
-
-
-
-    [params.contact]
-        enable = true
-        location = "Kyiv"
-
-        [[params.contact.list]]
-        icon = "fas fa-phone-square"
-        url = "tel:#"
-        text = "+380688005548"
-        [[params.contact.list]]
-        icon = "fas fa-envelope-square"
-        url = "mailto:#"
-        text = "shtankopro@gmail.com"
-        [[params.contact.list]]
-        icon = "fas fa-globe"
-        url = "#"
-        text = "www.shtanko.dev"
-
-
-
-
-
-
-
-    [params.skills]
-        enable = true
-
-        [[params.skills.list]]
-        title = "Technical"
-        [[params.skills.list.items]]
-        details = "Kotlin, Java, Swift"
-        [[params.skills.list.items]]
-        details = "Android SDK, Google Play Services, Firebase, Clean Architecture, Architecture Components, Android Jetpack"
-        [[params.skills.list.items]]
-        details = "UI Tests, Unit Tests, JUnit, Mockito"
-        [[params.skills.list.items]]
-        details = "Dagger2, Koin"
-        [[params.skills.list.items]]
-        details = "RxJava, RxSwift"
-        [[params.skills.list.items]]
-        details = "Object-oriented design"
-        
-
-        [[params.skills.list]]
-        title = "Professional"
-        [[params.skills.list.items]]
-        details = "Effective communication"
-        [[params.skills.list.items]]
-        details = "Team player"
-
-
-
-
-
-
-    [params.education]
-        enable = true
-
-        [[params.education.list]]
-        degree = "BS in Computer Science"
-        university = "Kherson State University"
-        dates = "2011 - 2015"
-        [[params.education.list]]
-
-
-
-
-
-
-
-
-    [params.awards]
-        enable = false
-
-        [[params.awards.list]]
-        name = "Award Lorem Ipsum"
-        body = "Microsoft lorem ipsum"
-        date = "2019"
-        [[params.awards.list]]
-        name = "Award Donec Sodales"
-        body = "Oracle Aenean"
-        date = "2017"
-
-
-
-
-
-
-
-
-    [params.languages]
-        enable = true
-        [[params.languages.list]]
-        name = "English"
-        level = "Professional"
-
-
-
-
-
-
-
-
-    [params.interests]
-        enable = false
-
-        [[params.interests.list]]
-        name = "Climbing"
-        [[params.interests.list]]
-        name = "Snowboarding"
-        [[params.interests.list]]
-        name = "Photography"
-        [[params.interests.list]]
-        name = "Travelling"
-
-
-
-
-
-
-
-
-    [params.summary]
-        enable = true
-        text = "I'm a software developer with over 5 years of production experience of software development for Android(3y), and iOS(2y). Over the last several years, I've been focused on building Android applications."
-
-
-
-
-
-
-
-
-    [params.experience]
-        enable = true
-
-        [[params.experience.list]]
-        title = "Android Developer"
-        dates = "December 2018 - Present"
-        company = "Multimedia Nordic AS"
-        details = "Project: BrewBook - Android client for remote control of an IoT device. Brew Book ​​provides unique beer brewing possibilities that will satisfy any beer brewer."
-        [[params.experience.list.items]]
-        details = "I single-handedly wrote the Android app"
-        [[params.experience.list.items]]
-        details = "Made unit test coverage by 30%"
-        [[params.experience.list.items]]
-        details = "Set up Firebase Test Lab with custom scenario which helped to found bugs and ui problems in different mobile devices"
-        [[params.experience.list.items]]
-        details = "Working on project without detailed instructions"
-        [[params.experience.list.items]]
-        details = "I work with IoT device which controls the brewing processes"
-        [[params.experience.list.items]]
-        details = "The customer brewed beer by himself using our device and the Android application"
-
-        [[params.experience.list]]
-        title = "Android Developer"
-        dates = "2018 - 2019"
-        company = "Multimedia Nordic AS"
-        details = "Project: Fersk Fangst - Android app, which helps users to sell and buy fresh food in Norway."
-        [[params.experience.list.items]]
-        details = "Designed app architecture from scratch which speed up new feature development"
-        [[params.experience.list.items]]
-        details = "Finish the app on time"
-        [[params.experience.list.items]]
-        details = "Translating requirements and mock-ups into fully functioning features"
-        [[params.experience.list.items]]
-        details = "Set up CI for auto delivering new releases"
-        [[params.experience.list.items]]
-        details = "Added Firebase Crashlytics which helped found bugs on time"
-
-        [[params.experience.list]]
-        title = "Android Developer"
-        dates = "July 2017 - December 2018"
-        company = "2K-Group"
-        details = "Project: VPN Shield - VPN client for Android. https://play.google.com/store/apps/details?id=com.vpnshieldapp"
-        [[params.experience.list.items]]
-        details = "Reduced battery consumption of the app through fixing critical memory leaks in legacy code"
-        [[params.experience.list.items]]
-        details = "Improved VPN connection which increased average daily user sessions and good users reviews"
-        [[params.experience.list.items]]
-        details = "Added new payment systems(Samsung Pay, Amazon Pay) support that increased sales through the app by 25%"
-        [[params.experience.list.items]]
-        details = "Fixed bugs in auto deployment build scripts"
-        [[params.experience.list.items]]
-        details = "Refactored legacy Java code to Kotlin which reduced the amount of code and bugs"
-
-
-    [params.projects]
-        enable = false
-
-        [[params.projects.list]]
-        title = "Project Lorem Ipsum"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus."
-
-        [[params.projects.list]]
-        title = "Project Sed Fringilla"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
-
-        [[params.projects.list]]
-        title = "Project Praesent"
-        meta = "Open Source"
-        tagline = "You can use this section for your side projects. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim."
-
-
-
-
-
-
-
-
-
-
-    [params.information]
-        enable = false
-
-        [[params.information.list]]
-        title = "Papers"
-        [[params.information.list.items]]
-        details = "2018 · Lorem Ipsum"
-        [[params.information.list.items]]
-        details = "2016 · Sed Fringilla"
-
-        [[params.information.list]]
-        title = "Interests"
-        details = "Climbing, Snowboarding, Photography, Travelling"
-
-
-
-
-
-
-
-
-    [params.social]
-        enable = true
-
-        [[params.social.list]]
-        icon = "fab fa-github-square"
-        url = "//github.com/ashtanko"
-        title = "ashtanko"
-        [[params.social.list]]
-        icon = "fab fa-linkedin"
-        url = "//linkedin.com/in/alexey-shtanko"
-        title = "Alexey Shtanko"
+  colortheme = "white" # dark, light, white, or classic
+  rss = true # generate rss feed. default value is false
+  googleAnalyticsAsync = true # use asynchronous tracking. Synchronous tracking by default
+
+  # Home page settings
+  description = "Mobile software developer with 5+ years of production experience of software development for Android(4y), and iOS(2y). The primary technology stack is Android.​ iOS Development experience. Team player."
+  mainSection = "/" # your main section
+  showAllPostsOnHomePage = false # default
+  postsOnHomePage = 3 # this option will be ignored if showAllPostsOnHomePage is set to true
+  tagsOverview = false # show tags overview by default.
+  showProjectsList = false # show projects list by default (if projects data file exists).
+  #projectsUrl = "https://github.com/gohugoio" # title link for projects list
+
+  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+  dateFormat = "2006-01-02" # default
+
+  # Post page settings
+  show_updated = false # default
+
+  [params.comments]
+    enabled = false # default
+    engine = "disqus" # more supported engines will be added.
+
+  # the value of name should be an valid font awesome icon name (brands type)
+  # https://fontawesome.com/icons?d=gallery&s=brands
+  [[params.social]]
+    name = "github"
+    link = "https://github.com/ashtanko"
+  [[params.social]]
+    name = "linkedin"
+    link = "https://www.linkedin.com/in/alexey-shtanko/"
+  [[params.social]]
+    name = "email"
+    link = "shtankopro@gmail.com"  # no need for "mailto:" in the head

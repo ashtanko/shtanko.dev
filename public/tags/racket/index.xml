@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>racket on Hi, I’m Alex</title>
+    <link>/tags/racket/</link>
+    <description>Recent content in racket on Hi, I’m Alex</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Alexey Shtanko</copyright>
+    <lastBuildDate>Sat, 29 Feb 2020 09:00:00 +0000</lastBuildDate><atom:link href="/tags/racket/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Racket notes</title>
+      <link>/posts/2020-02-29-racket/</link>
+      <pubDate>Sat, 29 Feb 2020 09:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020-02-29-racket/</guid>
+      <description>Basic #lang Kotlin fun perform(n: Int, edges: List&amp;lt;List&amp;lt;Int&amp;gt;&amp;gt;): List&amp;lt;Int&amp;gt; { val res: MutableList&amp;lt;Int&amp;gt; = ArrayList() val seen = BooleanArray(n) for (edge in edges) { seen[edge[1]] = true } for (i in 0 until n) { if (!seen[i]) { res.add(i) } } return res } List  Empty list: null  () doesn&amp;quot;t work for null but &#39;() does   build a list: (list e1 ... en) Constructor: cons Access head of list: car Access tail of list: cdr Check for empty: null?</description>
+    </item>
+    
+  </channel>
+</rss>
