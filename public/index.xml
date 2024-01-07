@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Personal Site</title>
+    <link>https://example.org/</link>
+    <description>Recent content on Personal Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 Jan 2024 12:00:00 +0000</lastBuildDate>
+    <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Code Highlighting Showcase</title>
+      <link>https://example.org/blog/code-highlighting-showcase/</link>
+      <pubDate>Fri, 05 Jan 2024 12:00:00 +0000</pubDate>
+      <guid>https://example.org/blog/code-highlighting-showcase/</guid>
+      <description>import kotlin.math.ceil /** * 2870. Minimum Number of Operations to Make Array Empty * @see &amp;lt;a href=&amp;#34;https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty&amp;#34;&amp;gt;Source&amp;lt;/a&amp;gt; */ fun interface MinOpToMakeArrayEmpty { operator fun invoke(nums: IntArray): Int } val minOpToMakeArrayEmptyCounting = MinOpToMakeArrayEmpty { nums -&amp;gt; val counter = mutableMapOf&amp;lt;Int, Int&amp;gt;() for (num in nums) { counter[num] = counter.getOrDefault(num, 0) + 1 } var ans = 0 for ((_, count) in counter) { if (count == 1) { return@MinOpToMakeArrayEmpty -1 } ans += ceil(count.</description>
+    </item>
+    <item>
+      <title>Image Optimization</title>
+      <link>https://example.org/blog/image-optimization/</link>
+      <pubDate>Sat, 16 Oct 2021 23:51:37 +0200</pubDate>
+      <guid>https://example.org/blog/image-optimization/</guid>
+      <description>The theme optimizes images by default with a custom Hugo&amp;rsquo;s markdown render hook:&#xA;The theme creates resized versions for each image, ranging from 100 to 700 pixels wide. It generates WebP versions for each size if the original image format isn&amp;rsquo;t WebP. The theme keeps the original file format as a fallback for browsers that don&amp;rsquo;t support the WebP format. Images in SVG format are embedded as-is. Blog Post Cover Images# Use the front matter of your posts to add cover images:</description>
+    </item>
+    <item>
+      <title>Prism Code Highlighting Showcase</title>
+      <link>https://example.org/blog/prism-code-highlighting-showcase/</link>
+      <pubDate>Wed, 28 Jul 2021 04:25:37 +0200</pubDate>
+      <guid>https://example.org/blog/prism-code-highlighting-showcase/</guid>
+      <description>&lt;p&gt;This theme uses &lt;a&#xA;  href=&#34;https://prismjs.com/&#34;&#xA;  &#xA;  &#xA;    class=&#34;link--external&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&#xA;  &#xA;&gt;Prism&lt;/a&gt; for code highlighting. Other Hugo&#xA;themes usually include a pre-configured version of Prism, which complicates&#xA;updates and clutters the source code base with third-party JavaScript.&lt;/p&gt;&#xA;&lt;p&gt;Only the Prism features you select in the Hugo site configuration are bundled by&#xA;the build process. This way, Prism can be easily updated with &lt;code&gt;npm&lt;/code&gt; and the&#xA;size of the JavaScript and CSS bundles are minimized by only including what you&#xA;need.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Markdown Syntax Guide</title>
+      <link>https://example.org/blog/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.org/blog/markdown-syntax/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rich Content</title>
+      <link>https://example.org/blog/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.org/blog/rich-content/</guid>
+      <description>&lt;p&gt;Hugo ships with several &lt;a&#xA;  href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&#xA;  &#xA;  &#xA;    class=&#34;link--external&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&#xA;  &#xA;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a&#xA;  href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&#xA;  &#xA;  &#xA;    class=&#34;link--external&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&#xA;  &#xA;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://example.org/blog/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.org/blog/placeholder-text/</guid>
+      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://example.org/blog/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.org/blog/math-typesetting/</guid>
+      <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Emoji Support</title>
+      <link>https://example.org/blog/emoji-support/</link>
+      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.org/blog/emoji-support/</guid>
+      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://example.org/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/about/</guid>
+      <description>I am a Senior Software Engineer at EPAM. These days I&amp;rsquo;m into Android, Flutter and Computer Science, both for fun and for work.&#xA;Let&amp;rsquo;s build something together.&#xA;Contact me at shtankopro@gmail.com.&#xA;You can also find some of my work at: https://github.com/ashtanko.</description>
+    </item>
+    <item>
+      <title>CV</title>
+      <link>https://example.org/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.org/cv/</guid>
+      <description>Experience# CEO/President 2013-12-01 - 2014-12-01 Pied Piper — Awesome compression company Palo Alto, CA Pied Piper is a multi-platform technology based on a proprietary universal compression algorithm that has consistently fielded high Weisman Scores™ that are not merely competitive, but approach the theoretical limit of lossless compression.&#xA;Build an algorithm for artist to detect if their music was violating copy right infringement laws Successfully won Techcrunch Disrupt Optimized an algorithm that holds the current world record for Weisman Scores Education# Information Technology (Bachelor) 2011-06-01 - 2014-01-01 University of Oklahoma 4.</description>
+    </item>
+  </channel>
+</rss>
