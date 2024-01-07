@@ -16,13 +16,6 @@
       <description>import kotlin.math.ceil /** * 2870. Minimum Number of Operations to Make Array Empty * @see &amp;lt;a href=&amp;#34;https://leetcode.com/problems/minimum-number-of-operations-to-make-array-empty&amp;#34;&amp;gt;Source&amp;lt;/a&amp;gt; */ fun interface MinOpToMakeArrayEmpty { operator fun invoke(nums: IntArray): Int } val minOpToMakeArrayEmptyCounting = MinOpToMakeArrayEmpty { nums -&amp;gt; val counter = mutableMapOf&amp;lt;Int, Int&amp;gt;() for (num in nums) { counter[num] = counter.getOrDefault(num, 0) + 1 } var ans = 0 for ((_, count) in counter) { if (count == 1) { return@MinOpToMakeArrayEmpty -1 } ans += ceil(count.</description>
     </item>
     <item>
-      <title>Image Optimization</title>
-      <link>https://example.org/blog/image-optimization/</link>
-      <pubDate>Sat, 16 Oct 2021 23:51:37 +0200</pubDate>
-      <guid>https://example.org/blog/image-optimization/</guid>
-      <description>The theme optimizes images by default with a custom Hugo&amp;rsquo;s markdown render hook:&#xA;The theme creates resized versions for each image, ranging from 100 to 700 pixels wide. It generates WebP versions for each size if the original image format isn&amp;rsquo;t WebP. The theme keeps the original file format as a fallback for browsers that don&amp;rsquo;t support the WebP format. Images in SVG format are embedded as-is. Blog Post Cover Images# Use the front matter of your posts to add cover images:</description>
-    </item>
-    <item>
       <title>Prism Code Highlighting Showcase</title>
       <link>https://example.org/blog/prism-code-highlighting-showcase/</link>
       <pubDate>Wed, 28 Jul 2021 04:25:37 +0200</pubDate>
