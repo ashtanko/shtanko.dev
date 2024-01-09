@@ -109,3 +109,62 @@ plugins = [
   "show-language",
   "treeview"
 ]
+
+  # By default, the theme creates resized versions of images ranging from 300 to
+  # 700 pixels wide in increments of 200 pixels
+  #[params.imageResize]
+  #  min = 300
+  #  max = 700
+  #  increment = 200
+
+  [params.tagCloud]
+    enable = false
+    minFontSizeRem = 0.8
+    maxFontSizeRem = 2.0
+
+  # Social share links for posts:
+  #   - iconSuite: "simple-icon" or "tabler-icon"
+  #   - iconName: name of the icon from the "iconSuite"
+  #   - {url} placeholder for post .Permalink
+  #   - {title} placeholder for post .Title
+  # See  https://github.com/bradvin/social-share-urls for more format strings
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "facebook"
+    formatString = "https://www.facebook.com/sharer.php?u={url}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "reddit"
+    formatString = "https://reddit.com/submit?url={url}&title={title}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "twitter"
+    formatString = "https://twitter.com/intent/tweet?url={url}&text={title}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "linkedin"
+    formatString = "https://www.linkedin.com/sharing/share-offsite/?url={url}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "tumblr"
+    formatString = "https://www.tumblr.com/widgets/share/tool?canonicalUrl={url}&title={title}&caption={title}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "pinterest"
+    formatString = "https://pinterest.com/pin/create/button/?url={url}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "ycombinator"
+    formatString = "https://news.ycombinator.com/submitlink?u={url}&t={title}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "xing"
+    formatString = "https://www.xing.com/spi/shares/new?url={url}"
+  [[params.socialShare]]
+    iconSuite = "simple-icon"
+    iconName = "telegram"
+    formatString = "https://telegram.me/share/url?url={url}&text={title}"
+  [[params.socialShare]]
+    iconSuite = "tabler-icon"
+    iconName = "mail"
+    formatString = "mailto:?subject={title}&body={url}"
